@@ -1,0 +1,151 @@
+[
+    {
+        "caretX": 1,
+        "caretY": 20,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/ucos_ii.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 13
+    },
+    {
+        "caretX": 21,
+        "caretY": 149,
+        "filename": "C:/Users/21032/Desktop/uCOS/main.c",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 141
+    },
+    {
+        "caretX": 28,
+        "caretY": 308,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_sem.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 4,
+        "topLine": 300
+    },
+    {
+        "caretX": 21,
+        "caretY": 17,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_q.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 7
+    },
+    {
+        "caretX": 21,
+        "caretY": 17,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_mutex.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 12,
+        "caretY": 80,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_mbox.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 33
+    },
+    {
+        "caretX": 37,
+        "caretY": 293,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_task.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 3,
+        "topLine": 308
+    },
+    {
+        "caretX": 11,
+        "caretY": 11,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_core.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 32,
+        "caretY": 20,
+        "filename": "C:/Users/21032/Desktop/uCOS/includes.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 7
+    },
+    {
+        "caretX": 16,
+        "caretY": 14,
+        "filename": "C:/Users/21032/Desktop/uCOS/Ports/WIN32/os_trace.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 7
+    },
+    {
+        "caretX": 21,
+        "caretY": 17,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_flag.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 21,
+        "caretY": 17,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_mem.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 19,
+        "caretY": 341,
+        "filename": "C:/Users/21032/Desktop/uCOS/Ports/WIN32/os_cpu_c.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 2,
+        "topLine": 375
+    },
+    {
+        "caretX": 21,
+        "caretY": 16,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_dbg_r.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 11,
+        "caretY": 17,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/os_time.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 8,
+        "caretY": 269,
+        "filename": "C:/Users/21032/Desktop/uCOS/Source/ucos_ii.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 1,
+        "topLine": 263
+    }
+]

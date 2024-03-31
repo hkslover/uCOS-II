@@ -1,0 +1,15 @@
+{
+    "breakpoints": [
+    ],
+    "timestamp": "1711867279079",
+    "watchvars": [
+        {
+            "expression": "AppStartTaskStk",
+            "timestamp": "1710658532241"
+        },
+        {
+            "expression": "AppStartTaskStk[TASK_STK_SIZE]",
+            "timestamp": "1710658654181"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+# Project: uCOS
+# Makefile created by Red Panda C++ 2.25.1
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = uCOS_private.res
+OBJ      = Source/ucos_ii.o main.o Source/os_sem.o Source/os_q.o Source/os_mutex.o Source/os_mbox.o Source/os_task.o Source/os_core.o Ports/WIN32/os_trace.o Source/os_flag.o Source/os_mem.o Ports/WIN32/os_cpu_c.o Source/os_dbg_r.o Source/os_time.o $(RES)
+LINKOBJ  = Source/ucos_ii.o main.o Source/os_sem.o Source/os_q.o Source/os_mutex.o Source/os_mbox.o Source/os_task.o Source/os_core.o Ports/WIN32/os_trace.o Source/os_flag.o Source/os_mem.o Ports/WIN32/os_cpu_c.o Source/os_dbg_r.o Source/os_time.o uCOS_private.res
+CLEANOBJ  =  Source\ucos_ii.o main.o Source\os_sem.o Source\os_q.o Source\os_mutex.o Source\os_mbox.o Source\os_task.o Source\os_core.o Ports\WIN32\os_trace.o Source\os_flag.o Source\os_mem.o Ports\WIN32\os_cpu_c.o Source\os_dbg_r.o Source\os_time.o  uCOS_private.res uCOS.exe
+LIBS     =  -lwinMM
+INCS     =  
+CXXINCS  =  
+BIN      = uCOS.exe
+CXXFLAGS = $(CXXINCS)  -g3 -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Source/ucos_ii.o: Source/ucos_ii.c Ports/WIN32/os_cpu.h os_cfg.h Source/ucos_ii.h
+	$(CC) -c Source/ucos_ii.c -o Source/ucos_ii.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+main.o: main.c app_cfg.h Ports/WIN32/os_cpu.h includes.h os_cfg.h Source/ucos_ii.h
+	$(CC) -c main.c -o main.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_sem.o: Source/os_sem.c
+	$(CC) -c Source/os_sem.c -o Source/os_sem.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_q.o: Source/os_q.c
+	$(CC) -c Source/os_q.c -o Source/os_q.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_mutex.o: Source/os_mutex.c
+	$(CC) -c Source/os_mutex.c -o Source/os_mutex.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_mbox.o: Source/os_mbox.c
+	$(CC) -c Source/os_mbox.c -o Source/os_mbox.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_task.o: Source/os_task.c
+	$(CC) -c Source/os_task.c -o Source/os_task.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_core.o: Source/os_core.c
+	$(CC) -c Source/os_core.c -o Source/os_core.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Ports/WIN32/os_trace.o: Ports/WIN32/os_trace.c app_cfg.h Ports/WIN32/os_cpu.h includes.h os_cfg.h Ports/WIN32/os_trace.h Source/ucos_ii.h
+	$(CC) -c Ports/WIN32/os_trace.c -o Ports/WIN32/os_trace.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_flag.o: Source/os_flag.c
+	$(CC) -c Source/os_flag.c -o Source/os_flag.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_mem.o: Source/os_mem.c
+	$(CC) -c Source/os_mem.c -o Source/os_mem.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Ports/WIN32/os_cpu_c.o: Ports/WIN32/os_cpu_c.c app_cfg.h Ports/WIN32/os_cpu.h includes.h os_cfg.h Ports/WIN32/os_trace.h Source/ucos_ii.h
+	$(CC) -c Ports/WIN32/os_cpu_c.c -o Ports/WIN32/os_cpu_c.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_dbg_r.o: Source/os_dbg_r.c Ports/WIN32/os_cpu.h os_cfg.h Source/ucos_ii.h
+	$(CC) -c Source/os_dbg_r.c -o Source/os_dbg_r.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+Source/os_time.o: Source/os_time.c
+	$(CC) -c Source/os_time.c -o Source/os_time.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+uCOS_private.res: uCOS_private.rc 
+	$(WINDRES) -i uCOS_private.rc --input-format=rc -o uCOS_private.res -O coff $(WINDRESFLAGS) 
+
